@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7657d5">
+  <title>English Adventure — Impara giocando!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="English Adventure home"><span class="brand-icon">🌈</span><span>English <b>Adventure</b></span></a>
+    <div class="score-pill" aria-live="polite"><span>⭐</span> <b id="totalStars">0</b> stelle</div>
+  </header>
+
+  <main class="shell">
+    <section class="welcome">
+      <div class="welcome-copy">
+        <span class="eyebrow">PICCOLE LEZIONI, GRANDI AVVENTURE</span>
+        <h1>Hello, <span>superstar!</span> ✨</h1>
+        <p>Impariamo l’inglese giocando. Scegli un gioco e cominciamo!</p>
+        <div class="welcome-tags"><span>🎧 Ascolta</span><span>🧩 Gioca</span><span>⭐ Guadagna stelle</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="sun">☀️</span><span class="cloud">☁️</span><span class="rainbow">🌈</span><span class="unicorn">🦄</span><span class="spark s1">✦</span><span class="spark s2">✧</span></div>
+    </section>
+
+    <section class="section-heading">
+      <div><span class="eyebrow">SCEGLI LA TUA MISSIONE</span><h2>Che cosa giochiamo oggi?</h2></div>
+      <div class="progress-mini"><span>Il tuo tesoro</span><b>⭐ <span id="headerStars">0</span></b></div>
+    </section>
+
+    <section class="game-grid" aria-label="Giochi">
+      <button class="game-card colors selected" data-game="learn">
+        <span class="card-emoji">🎨</span><span class="card-label">GIOCO 1</span><h3>Impara le parole</h3><p>Colori, animali, numeri, cibo e famiglia</p><span class="card-action">Inizia a imparare <span>→</span></span>
+      </button>
+      <button class="game-card quiz" data-game="quiz">
+        <span class="card-emoji">🧠</span><span class="card-label">GIOCO 2</span><h3>Indovina!</h3><p>Ascolta o guarda e scegli la risposta giusta</p><span class="card-action">Gioca ora <span>→</span></span>
+      </button>
+      <button class="game-card memory" data-game="memory">
+        <span class="card-emoji">🃏</span><span class="card-label">GIOCO 3</span><h3>Memory magico</h3><p>Trova le coppie e allena la memoria</p><span class="card-action">Trova le coppie <span>→</span></span>
+      </button>
+      <button class="game-card listen" data-game="listen">
+        <span class="card-emoji">🎧</span><span class="card-label">GIOCO 4</span><h3>Ascolta e trova</h3><p>Ascolta una parola inglese e trova l’immagine</p><span class="card-action">Accendi le orecchie <span>→</span></span>
+      </button>
+    </section>
+
+    <section class="play-area" id="playArea">
+      <div class="play-header">
+        <div><span class="eyebrow" id="gameEyebrow">IL TUO VOCABOLARIO</span><h2 id="gameTitle">Impara le parole</h2></div>
+        <button class="sound-help" id="helpSound" title="Ascolta una parola d'esempio">🔊 Prova l’audio</button>
+      </div>
+      <div class="category-tabs" id="categoryTabs" aria-label="Categorie">
+        <button class="tab active" data-category="colors">🎨 Colori</button>
+        <button class="tab" data-category="animals">🐾 Animali</button>
+        <button class="tab" data-category="numbers">🔢 Numeri</button>
+        <button class="tab" data-category="food">🍓 Cibo</button>
+        <button class="tab" data-category="family">👨‍👩‍👧 Famiglia</button>
+      </div>
+      <div id="gameContent"></div>
+      <div class="play-footer"><span>💡 <span id="footerTip">Tocca una carta per ascoltare la parola inglese.</span></span><button class="reset-btn" id="resetGame">Ricomincia ↻</button></div>
+    </section>
+    <footer><span>🌟 Bravissima! Ogni parola imparata è una nuova avventura.</span><span>Made with 💜 for little learners</span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
