@@ -10,7 +10,8 @@ const vocab = {
     {en:"Cat",it:"Gatto",emoji:"🐱"},{en:"Dog",it:"Cane",emoji:"🐶"},{en:"Rabbit",it:"Coniglio",emoji:"🐰"},
     {en:"Lion",it:"Leone",emoji:"🦁"},{en:"Elephant",it:"Elefante",emoji:"🐘"},{en:"Monkey",it:"Scimmia",emoji:"🐵"},
     {en:"Fish",it:"Pesce",emoji:"🐠"},{en:"Bird",it:"Uccello",emoji:"🐦"},{en:"Turtle",it:"Tartaruga",emoji:"🐢"},
-    {en:"Butterfly",it:"Farfalla",emoji:"🦋"}
+    {en:"Butterfly",it:"Farfalla",emoji:"🦋"},
+    { en: "Horse",it: "Cavallo",image: "images/cavallo.jpg" }
   ],
   numbers: [
     {en:"One",it:"Uno",emoji:"☝️"},{en:"Two",it:"Due",emoji:"✌️"},{en:"Three",it:"Tre",emoji:"🤟"},
